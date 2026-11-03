@@ -118,6 +118,11 @@ bun test tests/permission.test.ts tests/execution-profiles.test.ts
 
 `tests/compaction-test.ts` and `tests/subagent-test.ts` are standalone scripts that drive live sessions with an API key and write prompts and summaries to `tests/output/` for evaluation.
 
+## Project background
+
+- [Foundry project overview](https://chabot.dev/projects/#foundry) on Chris Chabot’s site.
+- [The 57-character system prompt](https://chabot.dev/blog/claude-oauth-detective-story/): an investigation into Foundry’s early OAuth integration.
+
 ## Credits and license
 
 Foundry uses the [Anthropic TypeScript SDK](https://github.com/anthropics/anthropic-sdk-typescript) and [OpenTUI](https://github.com/anomalyco/opentui). Its OAuth flow draws on analysis of the Claude Code CLI, the `opencode-anthropic-auth` package and [Link Assistant Agent](https://github.com/link-assistant/agent), as recorded in [`claude-auth.md`](claude-auth.md). OpenCode and OpenTUI's source served as local references during development; nothing in `src/` imports those copies, and the `opentui` entry in the tree isn't needed to build.
